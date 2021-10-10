@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/carbon_phoenix.mk
+    $(LOCAL_DIR)/voltage_phoenix.mk
 
 COMMON_LUNCH_CHOICES := \
-    carbon_phoenix-user \
-    carbon_phoenix-userdebug \
-    carbon_phoenix-eng
+    voltage_phoenix-user \
+    voltage_phoenix-userdebug \
+    voltage_phoenix-eng
