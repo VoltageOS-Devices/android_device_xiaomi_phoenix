@@ -88,7 +88,12 @@ private:
 
     std::mutex mClientCallbackMutex;
     sp<IBiometricsFingerprintClientCallback> mClientCallback;
+
     fingerprint_device_t *mDevice;
+    Return<bool> isUdfps(uint32_t sensorId) override;
+    Return<void> onFingerDown(uint32_t x, uint32_t y, float minor, float major) override;
+    Return<void> onFingerUp() override;
+
 };
 
 }  // namespace implementation

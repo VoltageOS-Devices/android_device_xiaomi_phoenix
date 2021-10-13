@@ -399,7 +399,20 @@ Return<int32_t> BiometricsFingerprint::extCmd(int32_t cmd, int32_t param) {
 }
 #endif /* XIAOMI_FINGERPRINTEXTENSION */
 
-} // namespace implementation
+Return<bool> BiometricsFingerprint::isUdfps(uint32_t /* sensorId */) {
+    return false;
+}
+
+Return<void> BiometricsFingerprint::onFingerDown(uint32_t /* x */, uint32_t /* y */,
+                                                float /* minor */, float /* major */) {
+    return Void();
+}
+
+Return<void> BiometricsFingerprint::onFingerUp() {
+    return Void();
+}
+
+}  // namespace implementation
 }  // namespace V2_1
 }  // namespace fingerprint
 }  // namespace biometrics
