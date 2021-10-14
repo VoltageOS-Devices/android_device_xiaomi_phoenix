@@ -165,6 +165,10 @@ PRODUCT_PACKAGES += \
     android.hidl.memory.block@1.0.vendor \
     libstdc++.vendor
 
+# Camera
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++.so
+
 # Crypto
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor \
