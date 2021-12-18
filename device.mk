@@ -522,6 +522,7 @@ PRODUCT_PACKAGES += \
     init.safailnet.rc \
     init.target.rc \
     fstab.qcom \
+    fstab.emmc \
     ueventd.qcom.rc
 
 # RIL
